@@ -1,0 +1,214 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Survey About Guitars</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your favorite guitar brand?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+            <option value="Gibson">Gibson</option>
+            <option value="Guild">Guild</option>
+            <option value="Seagull">Seagull</option>
+            <option value="Yamaha">Yamaha</option>
+            <option value="Ovation">Ovation</option>
+            <option value="Washburn">Washburn</option>
+            <option value="Fender">Fender</option>
+            <option value="Epiphone">Epiphone</option>
+            <option value="ESP">ESP</option>
+            <option value="Gretsch">Gretsch</option>
+            <option value="Ibanez">Ibanez</option>
+            <option value="Paul Reed Smith">Paul Reed Smith</option>
+            <option value="Martin">Martin</option>
+            <option value="Taylor">Taylor</option>
+            <option value="Rickenbacker">Rickenbacker</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>what is your favorite kind of guitar?</p>
+      <label>
+        <input
+          name="guitar-type"
+          value="Electric"
+          type="radio"
+          class="input-radio"
+          checked
+        />Electric</label
+      >
+      <label>
+        <input
+          name="guitar-type"
+          value="Acoustic"
+          type="radio"
+          class="input-radio"
+        />Acoustic</label
+      >
+
+      <label
+        ><input
+          name="guitar-type"
+          value="Hybrid"
+          type="radio"
+          class="input-radio"
+        />Hybrid</label
+      >
+      <label>
+        <input
+          name="guitar-type"
+          value="Classical"
+          type="radio"
+          class="input-radio"
+          checked
+        />Classical</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What do you think is your level in guitar?
+      </p>
+      <select id="guitarLevel" name="guitarLevel" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Newbie">Newbie</option>
+        <option value="Intermidiate">Intermidiate</option>
+        <option value="Professional">Professional</option>
+        <option value="No Knowledge at all">No Knowledge at all</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What guitar add-ons or peripherals do you like with your guitar?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Tuner"
+          type="checkbox"
+          class="input-checkbox"
+        />Tuner</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Capo"
+          type="checkbox"
+          class="input-checkbox"
+        />Capo</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Amplifier"
+          type="checkbox"
+          class="input-checkbox"
+        />Amplifier</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Picks"
+          type="checkbox"
+          class="input-checkbox"
+        />Picks</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Distortion Pedal"
+          type="checkbox"
+          class="input-checkbox"
+        />Distortion Pedal</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Guitat Strap"
+          type="checkbox"
+          class="input-checkbox"
+        />Guitar Strap</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Pick Guard"
+          type="checkbox"
+          class="input-checkbox"
+        />Pick Guard</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Strings"
+          type="checkbox"
+          class="input-checkbox"
+        />Strings</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Cables"
+          type="checkbox"
+          class="input-checkbox"
+        />Cables</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any suggestions to customize your guitar?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
